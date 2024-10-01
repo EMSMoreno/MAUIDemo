@@ -6,12 +6,12 @@
         {
             InitializeComponent();
 
-            var navPage = new NavigationPage(new MinhaPagina());
+            //var navPage = new NavigationPage(new MinhaPagina());
 
-            navPage.BarBackground = Colors.Yellow;
-            navPage.BarTextColor = Colors.Blue;
+            //navPage.BarBackground = Colors.Yellow;
+            //navPage.BarTextColor = Colors.Blue;
 
-            MainPage = navPage;
+            MainPage = new TabbedPageDemo();
         }
     }
 }
