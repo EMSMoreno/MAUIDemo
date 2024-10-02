@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new AbsoluteLayoutDemo());
+            MainPage = new NavigationPage (new MauiPresentationControls());
         }
     }
 }
