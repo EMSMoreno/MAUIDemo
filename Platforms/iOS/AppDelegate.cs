@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using MauiDemoDataBinding;
 
 namespace MauiDemo
 {
