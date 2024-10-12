@@ -59,6 +59,11 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\cinel.jpeg" />
 	  <None Remove="Resources\Images\face_logo.png" />
+	  <None Remove="Resources\Images\galaxia1.jpg" />
+	  <None Remove="Resources\Images\galaxia2.jpeg" />
+	  <None Remove="Resources\Images\galaxia3.jpg" />
+	  <None Remove="Resources\Images\galaxia4.jpeg" />
+	  <None Remove="Resources\Images\galaxia5.jpg" />
 	  <None Remove="Resources\Images\gear_icon.png" />
 	  <None Remove="Resources\Images\plus_icon.png" />
 	  <None Remove="Resources\Images\Profile.png" />
@@ -83,6 +88,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="GridLayoutDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MauiCollectionControls.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MauiCommandControls.xaml">
