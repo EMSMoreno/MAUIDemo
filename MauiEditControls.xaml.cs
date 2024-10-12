@@ -1,3 +1,5 @@
+using MauiDemoDataBinding;
+
 namespace MauiDemo;
 
 public partial class MauiEditControls : ContentPage

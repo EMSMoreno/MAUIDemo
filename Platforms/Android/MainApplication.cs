@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
-
-namespace MauiDemo
+using MauiDemo;
+namespace MauiDemoDataBinding
 {
     [Application]
     public class MainApplication : MauiApplication
@@ -10,7 +10,6 @@ namespace MauiDemo
             : base(handle, ownership)
         {
         }
-
         protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
     }
 }

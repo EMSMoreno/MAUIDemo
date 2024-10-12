@@ -1,6 +1,7 @@
 ﻿using MauiControls.Pages;
+using MauiDemoDataBinding;
 
-namespace MauiDemo
+namespace MauiDemoDataBinding
 {
     public partial class App : Application
     {
@@ -8,7 +9,7 @@ namespace MauiDemo
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new MauiCollectionControls());
+            MainPage = new MainPage();
         }
     }
 }

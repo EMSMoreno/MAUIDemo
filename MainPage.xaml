@@ -1,37 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiDemo.MainPage">
-
+             xmlns:models="clr-namespace:MauiDemoDataBinding.Models"
+             x:Class="MauiDemoDataBinding.MainPage">
+    <ContentPage.BindingContext>
+        <models:Produto x:Name="produto"
+                        Nome="iPhone 10"
+                        Preco="5000"
+                        Stock="5" />
+    </ContentPage.BindingContext>
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+        <VerticalStackLayout>
+            <Label x:Name="lblNome"
+                   Text="{Binding Source={x:Reference produto},Path=Nome}"
+                   FontSize="30"
+                   HorizontalOptions="Center"/>
 
-            <Label
-                Text="Olá Mundo!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
-            <Label
-                Text="Bem-vindo ao &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
-            <Button
+            <Label x:Name="lblPreco"
+                   Text="{Binding Source={x:Reference produto},
+                Path=Preco,
+                StringFormat='R$ {0:F2}'}"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label x:Name="lblStock"
+                      Text="{Binding Source={x:Reference produto},
+                Path=Stock,
+                StringFormat='Quantidade: {0}'}"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <!--<Button
                 x:Name="CounterBtn"
-                Text="Clica Aqui" 
-                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Clique para realizar o Data Binding"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill" />-->
 
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
