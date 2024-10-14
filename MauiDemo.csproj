@@ -126,6 +126,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="MauiJogoForca\" />
 	  <Folder Include="NewFolder\" />
 	</ItemGroup>
 
